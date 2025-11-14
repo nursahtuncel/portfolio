@@ -6,27 +6,16 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    container: {
-      center: true,
-      padding: "15px",
-      screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "960px",
-        xl: "1200px",
-      },
-    },
     extend: {
-        colors: {
-            primary: "#1c1c22",
-            accent: {
-                DEFAULT: "#00ff99",
-                hover: "#00e187",
-
-            },
+      colors: {
+        primary: "#1c1c22",
+        accent: {
+          DEFAULT: "#00ff99",
+          hover: "#00e187",
         },
+      },
       fontFamily: {
-        primary: ["JetBrains Mono", "monospace"], // ← Direkt font ismi kullanıyoruz
+        primary: ["JetBrains Mono", "monospace"],
       },
     },
   },

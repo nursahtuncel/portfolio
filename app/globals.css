@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base styling */
 @layer base {
   body {
+    font-family: "JetBrains Mono", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.75; /* leading-loose yerine */
-    margin: 0;
-    padding: 0;
-    background-color: #1c1c22;
+    @apply bg-primary text-white antialiased;
   }
 }
