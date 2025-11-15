@@ -13,10 +13,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${jetBrains.className} font-primary bg-primary text-white antialiased`}>
-      <Header />
+    <div className="max-w-[1440px] mx-auto px-4">
+        <Header/>
+        </div>
       <PageTransition >      
        <StairTransition/>
-        {children}
+       <div className="max-w-[1440px] mx-auto px-4">
+          {children}
+        </div>
       </PageTransition>
       </body>
     </html>
