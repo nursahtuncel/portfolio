@@ -48,24 +48,30 @@ const Services = () => {
             return (
               <div key={index} className="flex flex-col justify-between gap-4">
                 {/* top */}
-                <div className="w-full flex flex-col justify-between items-start gap-5">
-                  <div className="group w-full text-5xl flex items-center justify-between font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
-                    {service.num}
-                    <Link
-                      className="w-[55px] h-[55px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
-                      href={service.href}
-                    >
-                      <BsArrowDownRight className="text-primary text-3xl" />
-                    </Link>
+              <div className="group w-full flex flex-col justify-between items-start gap-5">
+  <div className="w-full text-5xl flex items-center justify-between font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+    {service.num}
 
-                  </div>
-                  {/* {heading} */}
-                  <h1 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">{service.title}</h1>
-                  {/* {description} */}
-                  <p className="text-white/60 ">{service.description}</p>
-                  {/* border */}
-                  <div className="border-b border-white/20 w-full"></div>
-                </div>
+    <Link
+      className="w-[55px] h-[55px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+      href={service.href}
+    >
+      <BsArrowDownRight className="text-primary text-3xl" />
+    </Link>
+  </div>
+
+  {/* heading */}
+  <h1 className="text-[42px] font-bold leading-none text-white transition-all duration-500 group-hover:text-accent">
+    {service.title}
+  </h1>
+
+  {/* description */}
+  <p className="text-white/60">{service.description}</p>
+
+  {/* border */}
+  <div className="border-b border-white/20 w-full"></div>
+</div>
+
               </div>
             );
           })}
